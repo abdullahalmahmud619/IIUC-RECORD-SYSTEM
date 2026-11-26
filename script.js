@@ -526,24 +526,3 @@ document.addEventListener('DOMContentLoaded', () => {
     populateUnitDropdowns();
     saveAndRefresh();
 });if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js'); }); }
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBtdzJthaN4gmCYoWbqykGVARN4lueCcV4",
-  authDomain: "iiuc-record-app.firebaseapp.com",
-  projectId: "iiuc-record-app",
-  storageBucket: "iiuc-record-app.firebasestorage.app",
-  messagingSenderId: "722750834249",
-  appId: "1:722750834249:web:5d9bc57237b45136c12198",
-  measurementId: "G-F3KMLTN900"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
